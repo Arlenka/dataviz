@@ -43,6 +43,10 @@ def draw_by_layers(graph, layers, filename, replace_dummies=False):
 
 
 def process_graph(graph, max_width=3):
+    if not nx.is_directed_acyclic_graph(graph):
+        print('Cyclic graph not supported!')
+        exit(1)
+
     labels = coffman_graham_layering.assign_labels(graph)
 
     layers, y_labels = coffman_graham_layering.do_layering(graph, max_width, labels)
