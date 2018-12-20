@@ -22,4 +22,4 @@ Or you can just call **python graph.py** and try to draw my sample.
 All pictures would be in the directory 'outputs'. 
 
 ## Samples
-[Output pictures for sample graph](../blob/master/outputs/samples)
+[Output pictures for sample graph](../master/outputs/samples)
